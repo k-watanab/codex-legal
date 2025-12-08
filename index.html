@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codex プライバシーポリシー</title>
-    <!-- あなたが提示した、シンプルなCSSを使用します -->
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -55,6 +54,16 @@
             color: #777;
             font-size: 0.9em;
         }
+        /* 重要な注釈用のスタイル */
+        .important-note {
+            font-size: 0.95em;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 5px;
+            border: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +83,10 @@
         <ol>
             <li>
                 <h3>ユーザーが記録した情報:</h3>
-                <p>本アプリの「記録」機能を通じてユーザーが入力したテキストデータ（出来事、感情、思考など）。</p>
+                <p>本アプリの「記録」機能を通じてユーザーが入力したテキストデータ。</p>
+                <div class="important-note">
+                    <strong>※重要：</strong>これらのデータは、<strong>ユーザーの端末上で暗号化された状態で</strong>当方のサーバーに送信・保存されます。暗号化の解除（復号）に必要な「パスフレーズ」はユーザー自身のみが管理し、当方は一切取得・保持しません。したがって、開発者であっても内容を閲覧することは技術的に不可能です。
+                </div>
             </li>
             <li>
                 <h3>AIによって生成された情報:</h3>
@@ -141,7 +153,10 @@
                 <ul>
                     <li><strong>目的:</strong> 上記「2-2. AIによる分析機能」を提供するため。</li>
                     <li><strong>送信される情報:</strong> ユーザーが記録したテキストデータ。</li>
-                    <li><strong>（注）</strong>Googleのポリシーに基づき、送信されたデータがAIモデルの学習に利用されることはありません。</li>
+                    <div class="important-note">
+                        <strong>（注1）</strong> AIによる分析を行うため、このデータは一時的に暗号化されていない状態でGoogleのサーバーへ送信されますが、<strong>分析完了後は即座に破棄され、保存されることはありません。</strong><br>
+                        <strong>（注2）</strong> Googleのポリシーに基づき、送信されたデータがAIモデルの学習（トレーニング）に利用されることはありません。
+                    </div>
                 </ul>
             </li>
         </ol>
@@ -161,24 +176,31 @@
             アカウントが削除された場合、当方のサーバー（Firestore）に保存されている、そのユーザーに紐づくすべての情報（記録、称号、アカウント情報など）は、復元不可能な形で完全に消去されます。
         </p>
 
-        <h2>5. 本ポリシーの変更</h2>
+        <h2>5. パスフレーズの管理について</h2>
+        <p>
+            本サービスのセキュリティ仕様上、データの暗号化・復号に使用する「パスフレーズ」の管理責任はユーザーご自身にあります。
+        </p>
+        <ul>
+            <li>当方はパスフレーズをサーバーに保存しないため、<strong>パスフレーズの再発行やリセットは技術的に不可能です。</strong></li>
+            <li>パスフレーズを紛失・忘却された場合、過去の「生の記録データ」を復号して閲覧することはできなくなりますので、厳重に管理してください。</li>
+        </ul>
+
+        <h2>6. 本ポリシーの変更</h2>
         <p>
             当方は、本ポリシーの内容を改定することがあります。重要な変更がある場合は、本アプリ内での通知など、分かりやすい方法でお知らせします。
         </p>
 
-        <h2>6. お問い合わせ窓口</h2>
+        <h2>7. お問い合わせ窓口</h2>
         <p>
             本ポリシーに関するご質問や懸念事項は、以下のお問い合わせ先までご連絡ください。
         </p>
-        <!-- あなたが提示したGoogleフォームのリンクをaタグのhref属性に設定します -->
         <p>
             お問い合わせフォームは<a href="https://forms.gle/MMAX6fXPwSjiWUYTA" target="_blank">こちら</a>から。
         </p>
         
         <div class="footer">
-            <p>制定日: 2025年10月31日</p>
+            <p>制定日: 2025年12月8日</p>
         </div>
     </div>
 </body>
 </html>
-
