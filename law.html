@@ -5,55 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>特定商取引法に基づく表記 | Codex</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; color: #333; line-height: 1.6; }
-        h1 { font-size: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 2rem; }
-        dl { display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; border-top: 1px solid #eee; }
-        dt { font-weight: bold; padding: 1rem 0; border-bottom: 1px solid #eee; grid-column: 1; }
-        dd { padding: 1rem 0; border-bottom: 1px solid #eee; grid-column: 2; margin: 0; }
-        
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+        dl { display: flex; flex-wrap: wrap; border-top: 1px solid #ccc; }
+        dt { width: 30%; padding: 15px; background: #f9f9f9; border-bottom: 1px solid #ccc; font-weight: bold; box-sizing: border-box; }
+        dd { width: 70%; padding: 15px; border-bottom: 1px solid #ccc; margin: 0; box-sizing: border-box; }
         @media (max-width: 600px) {
-            dl { display: block; }
-            dt { border-bottom: none; padding-bottom: 0.2rem; color: #666; font-size: 0.9rem; }
-            dd { border-bottom: 1px solid #eee; padding-top: 0; padding-bottom: 1.5rem; }
+            dt, dd { width: 100%; }
         }
-        .back-link { display: inline-block; margin-top: 2rem; color: #666; text-decoration: none; border-bottom: 1px solid #666; }
+        .back-link { display: block; margin-top: 20px; }
     </style>
 </head>
 <body>
+
     <h1>特定商取引法に基づく表記</h1>
-    
+
     <dl>
         <dt>販売事業者名</dt>
         <dd>渡邉一規</dd>
 
         <dt>代表者または運営統括責任者</dt>
         <dd>渡邉一規</dd>
-        
+
         <dt>所在地</dt>
         <dd>〒980-0021<br>宮城県仙台市青葉区中央2-11-19 仙南ビル4階 -A</dd>
-        
+
         <dt>お問い合わせ先</dt>
-        <dd>メールアドレス: codex.developer.k@gmail.com<br>電話番号: 09066207653</dd>
-        
+        <dd>
+            メールアドレス: codex.developer.k@gmail.com<br>
+            電話番号: 請求があり次第提供致しますので、必要な方は上記メールアドレスまでご連絡ください。
+        </dd>
+
         <dt>販売価格</dt>
-        <dd>各商品ページに記載（Pioneer Pass: 3,000円）</dd>
-        
+        <dd>
+            Codex Pioneer Pass: 3,000円（税込）<br>
+            ※将来的に追加されるプランについては、当該プランの購入画面に価格を表示します。
+        </dd>
+
         <dt>商品代金以外に必要な費用</dt>
-        <dd>インターネット接続料金、通信料金等はお客様のご負担となります。</dd>
-        
+        <dd>サービスの利用に必要なインターネット接続料金、通信料金等はお客様のご負担となります。</dd>
+
         <dt>代金の支払方法</dt>
         <dd>クレジットカード決済 (Stripe)</dd>
-        
+
         <dt>代金の支払時期</dt>
-        <dd>各カード会社引き落とし日</dd>
-        
+        <dd>ご利用のクレジットカードの締め日や契約内容により異なります。ご利用されるカード会社までお問い合わせください。<br>決済自体は注文完了時に確定します。</dd>
+
         <dt>商品の引渡時期</dt>
         <dd>決済完了後、直ちにご利用いただけます。</dd>
-        
+
         <dt>返品・キャンセルに関する特約</dt>
-        <dd>デジタルコンテンツの性質上、購入確定後の返品・キャンセルはお受けできません。</dd>
+        <dd>デジタルコンテンツの性質上、購入確定後の返品・キャンセルはお受けできません。<br>ただし、商品に瑕疵がある場合は、利用規約の定めに従って対応いたします。</dd>
+
+        <dt>動作環境</dt>
+        <dd>
+            以下の環境で動作を確認しています。<br>
+            ・iOS 15.0以降 (Safari 最新版)<br>
+            ・Android 10.0以降 (Chrome 最新版)<br>
+            ・PCブラウザ: Google Chrome, Safari, Firefox, Edge 各最新版
+        </dd>
     </dl>
 
-    <a href="index.html" class="back-link">&larr; メニューに戻る</a>
+    <a href="index.html" class="back-link">← メニューに戻る</a>
+
 </body>
 </html>
